@@ -1,7 +1,6 @@
-'use client'
-import { useTranslations } from 'next-intl';
+'use client';
+import Home from '../components/views/Home';
 
 export default function HomePage() {
-	const t = useTranslations();
-	return <h1>{t('welcome')}</h1>;
+	return <Home />;
 }

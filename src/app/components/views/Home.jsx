@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { useTranslations } from "next-intl";
+import { useTranslations } from 'next-intl';
 
-export default function HomePage() {
-  const t = useTranslations();
+export default function Home() {
+	const t = useTranslations();
 
-  return (
-    <div className="p-6">
-      <h1 className="text-2xl">{t("hello")}</h1>
-      <p>{t("welcome")}</p>
-    </div>
-  );
+	return (
+		<div className='p-6'>
+			<h1 className='text-2xl'>{t('welcome')}</h1>
+			<p>{t('welcome')}</p>
+		</div>
+	);
 }
