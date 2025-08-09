@@ -1,3 +1,7 @@
+'use client'
+import { useTranslations } from 'next-intl';
+
 export default function HomePage() {
-  return <h1>Salam dünya</h1>;
+	const t = useTranslations();
+	return <h1>{t('welcome')}</h1>;
 }
